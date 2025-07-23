@@ -19,6 +19,13 @@
     border: solid black;
 }
 
+.fish {
+    color:aliceblue;
+    padding: 1rem;
+    background-image: linear-gradient(#07ede9, #03254d, #05faea);
+    border: 1px solid #07a4ed;
+    border-radius: 8px;
+}
 .tips__heading {
     text-align: center;
 }

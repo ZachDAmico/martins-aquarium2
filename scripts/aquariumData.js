@@ -16,6 +16,54 @@ const database = {
             diet: "Omnivore",
             image: "https://example.com/images/dory.jpg"
         },
+        {
+        name: "Marlin",
+        species: "Clownfish",
+        length: 4,
+        location: "Great Barrier Reef",
+        diet: "Omnivore",
+        image: "https://example.com/images/marlin.jpg"
+    },
+    {
+        name: "Gill",
+        species: "Moorish Idol",
+        length: 6,
+        location: "Sydney Aquarium",
+        diet: "Carnivore",
+        image: "https://example.com/images/gill.jpg"
+    },
+    {
+        name: "Bubbles",
+        species: "Yellow Tang",
+        length: 4,
+        location: "Sydney Aquarium",
+        diet: "Herbivore",
+        image: "https://example.com/images/bubbles.jpg"
+    },
+    {
+        name: "Deb",
+        species: "Four Stripe Damselfish",
+        length: 3,
+        location: "Sydney Aquarium",
+        diet: "Omnivore",
+        image: "https://example.com/images/deb.jpg"
+    },
+    {
+        name: "Peach",
+        species: "Starfish",
+        length: 5,
+        location: "Sydney Aquarium",
+        diet: "Carnivore",
+        image: "https://example.com/images/peach.jpg"
+    },
+    {
+        name: "Jacques",
+        species: "Cleaner Shrimp",
+        length: 2,
+        location: "Sydney Aquarium",
+        diet: "Detritivore",
+        image: "https://example.com/images/jacques.jpg"
+    }
     ],
 
     tips: [

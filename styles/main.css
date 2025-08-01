@@ -29,3 +29,36 @@
 .tips__heading {
     text-align: center;
 }
+
+.location {
+    padding: 1rem;
+    border: 1px solid #07a4ed;
+    border-radius: 8px;
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+
+    .location {
+        height: 200px;
+    }
+    .location h2 {
+        font-size: 20px;
+    }
+    .location p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .location {
+        height: 225px
+    }
+    .location h2 {
+        font-size: 16px;
+    }
+    .location p {
+        font-size: 12px;
+    }
+
+}

@@ -1,6 +1,9 @@
 import { fishList } from './fishList.js'
 import { tipsList } from './tipList.js'
 import { locationsList } from './locationList.js'
+import { mostHolyFish } from './fishFilter.js'
+import { soldierFish } from './fishFilter.js'
+import { regularFish } from './fishFilter.js'
 
 // Generate the fish list
 const fishHTML = fishList()
@@ -10,6 +13,12 @@ const tipsHTML = tipsList()
 
 // Generate the location list
 const locationHTML = locationsList()
+
+const holyFishDisplay = mostHolyFish()
+
+const soldierFishDisplay = soldierFish()
+
+const regularFishDisplay = regularFish()
 
 // Render each HTML string to the correct DOM element
 const renderFishListToDOM = (fishHTML) => {

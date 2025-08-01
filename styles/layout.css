@@ -12,3 +12,10 @@
     gap: 20px;
     padding: 20px;
 }
+
+#locationList {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 2rem; /* space between cards */
+}

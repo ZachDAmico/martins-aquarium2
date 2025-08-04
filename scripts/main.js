@@ -1,4 +1,4 @@
-import { fishList } from './fishList.js'
+// import { fishList } from './fishList.js'
 import { tipsList } from './tipList.js'
 import { locationsList } from './locationList.js'
 import { mostHolyFish } from './fishFilter.js'
@@ -6,7 +6,7 @@ import { soldierFish } from './fishFilter.js'
 import { regularFish } from './fishFilter.js'
 
 // Generate the fish list
-const fishHTML = fishList()
+// const fishHTML = fishList()
 
 // Generate the care tips
 const tipsHTML = tipsList()
@@ -14,22 +14,56 @@ const tipsHTML = tipsList()
 // Generate the location list
 const locationHTML = locationsList()
 
-const holyFishDisplay = mostHolyFish()
+const displayHolyFishHTML = mostHolyFish()
 
-const soldierFishDisplay = soldierFish()
+const displaySoldierFishHTML = soldierFish()
 
-const regularFishDisplay = regularFish()
+const displayRegularFishHTML = regularFish()
 
 // Render each HTML string to the correct DOM element
-const renderFishListToDOM = (fishHTML) => {
-    const fishListElement = document.getElementById("fishList");
+// initial function to render entire list to DOM
+// const renderFishListToDOM = (holy, soldier, regular) => {
+//     const fishListElement = document.getElementById("fishList");
+    
+//     if (fishListElement) {
+//         fishListElement.innerHTML = `${holy} ${soldier} ${regular}`;
+//     } else {
+//         console.error('Could not find element with id "fishList"')
+//     }
+// }
+
+// i want to add a header to each filtered fish group to clean it up and make sure it is correct
+
+const renderHolyListToDOM = (holy) => {
+    const fishListElement = document.getElementById("holyList");
     
     if (fishListElement) {
-        fishListElement.innerHTML = fishHTML;
+        fishListElement.innerHTML = `${holy}`;
     } else {
-        console.error('Could not find element with id "fishList"')
+        console.error('Could not find element with id "holyList"')
     }
 }
+
+const renderSoldierListToDOM = (soldier) => {
+    const fishListElement = document.getElementById("soldierList");
+    
+    if (fishListElement) {
+        fishListElement.innerHTML = `${soldier}`;
+    } else {
+        console.error('Could not find element with id "soldierList"')
+    }
+}
+
+const renderRegularListToDOM = (regular) => {
+    const fishListElement = document.getElementById("regularList");
+    
+    if (fishListElement) {
+        fishListElement.innerHTML = `${regular}`;
+    } else {
+        console.error('Could not find element with id "regularList"')
+    }
+}
+
 
 const renderTipsListToDOM = (tipsHTML) => {
     const tipsListElement = document.getElementById("tipsList");
@@ -50,7 +84,13 @@ const renderLocationListToDOM = (locationHTML) => {
         console.error('Could not find element with id "locationList')
     }
 }
+
 // needs to be called after defining of function, otherwise could cause initialization error
-renderFishListToDOM(fishHTML)
+// renderFishListToDOM(displayHolyFishHTML, displaySoldierFishHTML, displayRegularFishHTML)
+renderHolyListToDOM(displayHolyFishHTML)
+renderSoldierListToDOM(displaySoldierFishHTML)
+renderRegularListToDOM(displayRegularFishHTML)
 renderTipsListToDOM(tipsHTML)
 renderLocationListToDOM(locationHTML)
+
+
